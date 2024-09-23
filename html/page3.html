@@ -61,46 +61,24 @@
             background-color: #ffffff;
             color: #1a1a1a;
         }
+
+        .app-link {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <img src="https://allpros-drivers-ed.com/wp-content/uploads/2023/12/AllPros-Drivers-Ed-Logo-300x96-1.jpg"
-            alt="Logo 1" class="logo">
-        <h1>Universal Drivers</h1>
-        <nav>
+        <img src="https://safe2pass.ca/wp-content/uploads/2023/02/Safe2Pass-logo-small-1.png" alt="Logo 3" class="logo">
+        <h1>Safe2Pass</h1>
+        <nav class="app-link">
             <a href="page2.html">Go to Page 2</a>
+            <a href="page2.html">Open App</a>
         </nav>
     </div>
-
-    <script>
-        // Script to switch between pages
-        window.onload = function () {
-            if (window.location.pathname.endsWith("page2.html")) {
-                document.body.innerHTML = `
-                    <div class="container">
-                        <img src="https://allpros-drivers-ed.com/wp-content/uploads/2023/12/AllPros-Drivers-Ed-Logo-300x96-1.jpg" alt="Logo 2" class="logo">
-                        <h1>All Pros Drivers</h1>
-                        <nav>
-                            <a href="../index.html">Go to Page 1</a>
-                            <a href="page3.html">Go to Page 3</a>
-                        </nav>
-                    </div>
-                `;
-            } else if (window.location.pathname.endsWith("page3.html")) {
-                document.body.innerHTML = `
-                    <div class="container">
-                        <img src="https://safe2pass.ca/wp-content/uploads/2023/02/Safe2Pass-logo-small-1.png" alt="Logo 3" class="logo">
-                        <h1>Safe2Pass</h1>
-                        <nav>
-                            <a href="page2.html">Go to Page 2</a>
-                        </nav>
-                    </div>
-                `;
-            }
-        };
-    </script>
 </body>
 
 </html>

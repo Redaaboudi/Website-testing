@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic Minimalistic Design</title>
+    <title>Futuristic Minimalistic Design - Page 2</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -61,46 +61,28 @@
             background-color: #ffffff;
             color: #1a1a1a;
         }
+
+        .app-link {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <img src="https://allpros-drivers-ed.com/wp-content/uploads/2023/12/AllPros-Drivers-Ed-Logo-300x96-1.jpg"
-            alt="Logo 1" class="logo">
-        <h1>Universal Drivers</h1>
-        <nav>
-            <a href="page2.html">Go to Page 2</a>
-        </nav>
+            alt="Logo 2" class="logo">
+        <h1>All Pros Drivers</h1>
+        <div class="app-link">
+            <nav>
+                <a href="../index.html">Go to Page 1</a>
+                <a href="page3.html">Go to Page 3</a>
+            </nav>
+            <a href="page3.html">Go to Page 3</a>
+        </div>
     </div>
-
-    <script>
-        // Script to switch between pages
-        window.onload = function () {
-            if (window.location.pathname.endsWith("page2.html")) {
-                document.body.innerHTML = `
-                    <div class="container">
-                        <img src="https://allpros-drivers-ed.com/wp-content/uploads/2023/12/AllPros-Drivers-Ed-Logo-300x96-1.jpg" alt="Logo 2" class="logo">
-                        <h1>All Pros Drivers</h1>
-                        <nav>
-                            <a href="../index.html">Go to Page 1</a>
-                            <a href="page3.html">Go to Page 3</a>
-                        </nav>
-                    </div>
-                `;
-            } else if (window.location.pathname.endsWith("page3.html")) {
-                document.body.innerHTML = `
-                    <div class="container">
-                        <img src="logo3.png" alt="Logo 3" class="logo">
-                        <h1>Page 3: Logo 3</h1>
-                        <nav>
-                            <a href="page2.html">Go to Page 2</a>
-                        </nav>
-                    </div>
-                `;
-            }
-        };
-    </script>
 </body>
 
 </html>
