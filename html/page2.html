@@ -5,82 +5,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futuristic Minimalistic Design - Page 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #333;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             transition: background-color 0.5s;
         }
 
         .container {
             text-align: center;
-            border: 2px solid #ffffff;
+            border: 2px solid #001f3f;
             border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
-            background-color: rgba(30, 30, 30, 0.9);
-            transition: transform 0.3s;
+            padding: 40px;
+            background-color: #f0f0f0;
+            box-shadow: 0 10px 30px rgba(0, 31, 63, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 80%;
+            max-width: 600px;
         }
 
         .container:hover {
             transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 31, 63, 0.4);
         }
 
         .logo {
-            width: 150px;
+            width: 160px;
             height: auto;
         }
 
         h1 {
-            margin-top: 10px;
-            font-size: 24px;
-            letter-spacing: 1.5px;
+            margin-top: 20px;
+            font-size: 28px;
+            letter-spacing: 2px;
+            color: #001f3f;
+            font-family: 'Orbitron', sans-serif;
         }
 
         nav {
-            margin-top: 20px;
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
         }
 
         a {
             color: #ffffff;
+            background-color: #ff4136;
             text-decoration: none;
-            padding: 10px 15px;
-            border: 2px solid #ffffff;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
+            padding: 12px 20px;
+            border: 2px solid #ff4136;
+            border-radius: 50px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 10px rgba(255, 65, 54, 0.3);
         }
 
         a:hover {
             background-color: #ffffff;
-            color: #1a1a1a;
+            color: #ff4136;
+            box-shadow: 0 0 15px rgba(255, 65, 54, 0.7);
         }
 
         .app-link {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 25px;
+        }
+
+        /* Button in upper right */
+        .top-right-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            background-color: #001f3f;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .top-right-button:hover {
+            background-color: #ff4136;
+            transform: scale(1.1);
+        }
+
+        /* Animated description */
+        .description {
+            opacity: 0;
+            position: relative;
+            animation: slide-up 1s ease-in-out forwards;
+            font-size: 18px;
+            color: #001f3f;
+            margin-top: 20px;
+        }
+
+        @keyframes slide-up {
+            from {
+                opacity: 0;
+                bottom: -50px;
+            }
+
+            to {
+                opacity: 1;
+                bottom: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            a {
+                font-size: 12px;
+                padding: 10px 15px;
+            }
+
+            .top-right-button {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
         }
     </style>
 </head>
 
 <body>
+    <!-- Button in the top right -->
+    <button class="top-right-button">Go to App</button>
+
     <div class="container">
+        <!-- Use your original logo here -->
         <img src="https://allpros-drivers-ed.com/wp-content/uploads/2023/12/AllPros-Drivers-Ed-Logo-300x96-1.jpg"
-            alt="Logo 2" class="logo">
+            alt="All Pros Drivers Logo" class="logo">
         <h1>All Pros Drivers</h1>
+
+        <!-- Animated description in the center -->
+        <p class="description">
+            Welcome to the future of driving education. Learn from the best and master the road.
+        </p>
+
+        <!-- Navigation links -->
         <div class="app-link">
             <nav>
                 <a href="../index.html">Go to Page 1</a>
                 <a href="page3.html">Go to Page 3</a>
             </nav>
-            <a href="page3.html">Go to Page 3</a>
         </div>
     </div>
 </body>
