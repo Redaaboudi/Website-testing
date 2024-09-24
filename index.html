@@ -13,8 +13,10 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #d4fc79, #96e6a1);
-            color: #222;
+            background: linear-gradient(135deg, #283c86, #45a247);
+            /* Darker gradient */
+            color: #f0f0f0;
+            /* Light text color for contrast */
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -28,17 +30,19 @@
             border-radius: 15px;
             padding: 50px;
             box-shadow: 0 15px 50px rgba(100, 100, 255, 0.2);
-            background-color: rgba(255, 255, 255, 0.85);
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Darker background for container */
             width: 85%;
             max-width: 650px;
             position: relative;
             overflow: hidden;
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(15px);
+            /* Increased blur for a more futuristic feel */
             transition: box-shadow 0.3s ease;
         }
 
         .container:hover {
-            box-shadow: 0 20px 60px rgba(100, 100, 255, 0.3);
+            box-shadow: 0 20px 60px rgba(100, 100, 255, 0.5);
         }
 
         .logo {
@@ -50,7 +54,8 @@
         h1 {
             font-family: 'Orbitron', sans-serif;
             font-size: 2.5rem;
-            color: #333;
+            color: #ffdd57;
+            /* Brighter color for header */
         }
 
         .app-link-btn {
@@ -58,7 +63,8 @@
             top: 15px;
             right: 15px;
             color: #222;
-            background: linear-gradient(135deg, #83a4d4, #b6fbff);
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            /* Brighter gradient */
             border: none;
             padding: 12px 30px;
             border-radius: 50px;
@@ -80,7 +86,8 @@
             font-family: 'Orbitron', sans-serif;
             font-size: 18px;
             margin: 40px 0;
-            color: #333;
+            color: #ddd;
+            /* Slightly lighter description text */
             opacity: 0;
             transform: translateY(100px);
             animation: slideUp 1.5s ease-out forwards;
@@ -99,7 +106,8 @@
 
         .futuristic-nav {
             display: inline-block;
-            color: #222;
+            color: #f0f0f0;
+            /* Light text for nav */
             text-decoration: none;
             padding: 12px 30px;
             font-family: 'Orbitron', sans-serif;
